@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.IO;
 namespace DataFiles
 {
@@ -10,6 +11,8 @@ namespace DataFiles
             //var doesFileExist = File.Exists(filePath);
             //Console.WriteLine($"{filePath} exists?: {doesFileExist}"); ;
             File.Delete(filePath);
+            Console.WriteLine(DateTime.Now.ToShortDateString());
+            ArrayList arrayList = new ArrayList();
         }
     }
 }
